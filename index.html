@@ -7,33 +7,35 @@
     <meta name="description" content="Douglas Reyes Portfolio">
     <meta name="keywords" content="Douglas Reyes, Portfolio, Web Developer, Designer">
     <meta name="author" content="Douglas Reyes">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="CSS/style.css">
+    
     <title>Douglas Reyes Portfolio</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <!-- Barra de navegacion -->
-        <nav id="navbar">
-            <div class="container">
-                <h1 class="logo"><a href="index.html">Douglas Reyes</a>
-                </h1>
-                <ul >
+            <div class="logo">
+                <a href="index.html"><img src="CSS/img/logo-douglas.png" alt="logo"></a>
+            </div>
+        <nav id="navbar" class="nav-links">
+                <ul>
                     <li><a href="#about-me">Acerca de mí</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#proyects">Proyectos</a></li>
-                    <li><a href="#education">Educacíon</a></li>
+                    <li><a href="#education">Educación</a></li>
                     <li><a href="#contact-me">Contáctame</a></li>
                 </ul>
-            </div>
         </nav>
+    </header>
         <!--Presentacion -->
-        <div id="showcase" class="Presentation">
+        <div id="showcase" class="presentation">
             <div class="left-presentation">
                 <h1 class="showcase-content">
                     Hola. Soy Douglas Reyes
                 </h1>
-                <img class="Img-dev" src="CSS/img/persona.png" alt="Douglas">
+                <img class="img-dev" src="CSS/img/persona.png" alt="Douglas">
                 <div class="socials-buttons">
                     <i class="fa-brands fa-whatsapp"></i>
                     <a href="">3044458413</a>
@@ -43,31 +45,34 @@
             </div>
             <div class="right-presentation">
                 <div class="slider">
-                    <img src="CSS/img/proyect-1.png" alt="proyecto 1">
-                    <img src="CSS/img/proyect-2.png" alt="proyecto 2">
+                    <ul>
+                        <li><img src="CSS/img/proyecto-1.png" alt="proyecto 1">
+                            <div class="text_img_1">
+                                <h2>Login Html/CSS</h2>
+                                <p>Proyecto de login utilizando HTML y CSS</p>
+                            </div>
+                        
+                        </li>
+                        <li><img src="CSS/img/proyecto-2.png" alt="proyecto 2">
+                            <div class="text_img_2">
+                                <h2>spa Html/css</h2>
+                                <p>Proyecto de una SPA utilizando HTML y CSS</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="details">
-                    <div class="left-details">
-                        <h2>Detalles</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, illo?</p>
-                    </div>
-                    <div class="right-details">
-                        <i class="fa-solid fa-link"></i>
-                        <i class="fa-solid fa-laptop"></i>
-                    </div>
-                </div>
+                
             </div>
         </div>
-    </header>
 <main>
     <!-- Acerca de mi  -->
-    <section id="about-me">
+    <section id="about-me" class="about-me">
         <h2>Acerca de mi</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem optio quos minima reiciendis nesciunt exercitationem saepe ea, possimus voluptatum. Ipsam similique sequi dolorem temporibus harum assumenda? Maxime deserunt atque ratione vero ab veritatis, ducimus, reprehenderit voluptatibus magnam quaerat repudiandae modi.</p>
     </section>
     <section id="skills">
+        <h2 class="skills-title">skills</h2>
         <div class="skills">
-            <h2 class="skills-title">skills</h2>
             <i class="fa-brands fa-html5"></i>
             <h2>HTML 5</h2>
             <i class="fa-brands fa-css3-alt"></i>
@@ -127,6 +132,7 @@
                 <h5>2024 - Presente</h5>
                 <p>Desarrollo Web Moderno con HTML5, CSS3, Javascript 2025,React de cero a experto,Python Total</p>
             </div>
+        </div>
     </section>
     <!-- Contactame -->
     <section id="contact-me">
@@ -144,6 +150,7 @@
             </div>
         </div>
     </section>
+    <!-- Boton de scroll para volver al inicio. Falta hacer el apartado de js para su funcionalidad -->
     <button class="btn-scrolltop" id="btn_scrolltop"><i class="fas fa-chevron-up"></i></button>
 </main>
 </body>
