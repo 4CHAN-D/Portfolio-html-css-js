@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +7,11 @@
     <meta name="description" content="Douglas Reyes Portfolio">
     <meta name="keywords" content="Douglas Reyes, Portfolio, Web Developer, Designer">
     <meta name="author" content="Douglas Reyes">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="CSS/style.css">
-    
+    <link rel="stylesheet" href="responsive.css">
+
     <title>Douglas Reyes Portfolio</title>
 </head>
 <body>
@@ -33,42 +34,67 @@
         <div id="showcase" class="presentation">
             <div class="left-presentation">
                 <h1 class="showcase-content">
-                    Hola. Soy Douglas Reyes
+                    Hola
                 </h1>
+                <h2>Soy Douglas Reyes</h2>
                 <img class="img-dev" src="CSS/img/persona.png" alt="Douglas">
                 <div class="socials-buttons">
                     <i class="fa-brands fa-whatsapp"></i>
-                    <a class="whatsapp" href="">3044458413</a>
+                    <a class="whatsapp" href="https://wa.me/3044458413">3044458413</a>
                     <i class="fa-brands fa-linkedin"></i>
-                    <a class="linkedin" href="">Douglas Reyes</a>
+                    <a class="linkedin" href="https://www.linkedin.com/in/dreyes2005">Douglas Reyes</a>
                 </div>
             </div>
             <div class="right-presentation">
-                <div class="slider">
-                    <ul>
-                        <li><img src="CSS/img/proyecto-1.png" alt="proyecto 1">
-                            <div class="text_img_1">
-                                <h2>Login Html/CSS</h2>
-                                <p>Proyecto de login utilizando HTML y CSS</p>
-                            </div>
-                        
-                        </li>
-                        <li><img src="CSS/img/proyecto-2.png" alt="proyecto 2">
-                            <div class="text_img_2">
-                                <h2>spa Html/css</h2>
-                                <p>Proyecto de una SPA utilizando HTML y CSS</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                
-            </div>
-        </div>
+              <div id="carouselPresentation" class="carousel slide " data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselPresentation" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselPresentation" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselPresentation" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="https://github.com/DouglasReyes" target="_blank"><img  src="CSS/img/proyecto-1.png" class="d-block w-100 img-carousel" alt="proyecto 1">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Login Html/CSS</h5>
+        <p>Proyecto de login utilizando HTML y CSS</p>
+        </a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <a href="https://github.com/DouglasReyes" target="_blank"><img src="CSS/img/proyecto-2.png" class="d-block w-100 img-carousel" alt="proyecto 2">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>SPA Html/CSS</h5>
+        <p>Mini proyecto de una SPA utilizando HTML y CSS</p>
+      </a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <a href="https://github.com/DouglasReyes" target="_blank"><img src="CSS/img/proyecto-3rezise.png" class="d-block w-100 img-carousel" alt="proyecto 3">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Calculadora</h5>
+        <p>Proyecto de calculadora utilizando HTML, CSS y Javascript</p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselPresentation" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselPresentation" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+</div>
 <main>
     <!-- Acerca de mi  -->
     <section id="about-me" class="about-me">
         <h2>Acerca de mi</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem optio quos minima reiciendis nesciunt exercitationem saepe ea, possimus voluptatum. Ipsam similique sequi dolorem temporibus harum assumenda? Maxime deserunt atque ratione vero ab veritatis, ducimus, reprehenderit voluptatibus magnam quaerat repudiandae modi.</p>
+        <p>Soy una persona apasionada por la programación, con un fuerte entusiasmo por el aprendizaje autodidacta y la mejora continua. Me motiva descubrir nuevas tecnologías, explorar distintos métodos de trabajo y enfrentar retos que me permitan crecer tanto en el ámbito profesional como en el personal.
+        Mi objetivo es desarrollarme en el mundo laboral aportando soluciones creativas y efectivas, al mismo tiempo que sigo fortaleciendo mis habilidades técnicas y humanas para alcanzar mis metas y aportar valor en cada proyecto.</p>
     </section>
     <section id="skills">
         <section id="skills"> 
@@ -99,16 +125,16 @@
              <div class="proyect">
             <img src="CSS/img/proyect-1.png" alt="proyecto 1">
             <div class="overlay">
-             <h3>Proyecto 1</h3>
-             <p>Descripción breve del proyecto.</p>
+             <h3>Login</h3>
+             <p>Proyecto de login</p>
              </div>
      </div>
 
         <div class="proyect">
             <img src="CSS/img/proyect-2.png" alt="proyecto 2">
              <div class="overlay">
-             <h3>Proyecto 2</h3>
-             <p>Descripción breve del proyecto.</p>
+             <h3>Spa</h3>
+             <p>Proyecto de una SPA utilizando HTML y CSS</p>
          </div>
     </div>
 
@@ -120,19 +146,10 @@
       </div>
     </div>
 
-    <!-- <div class="proyect">
-      <img src="CSS/img/proyect-4.png" alt="proyecto 4">
-      <div class="overlay">
-        <h3>Proyecto 4</h3>
-        <p>Descripción breve del proyecto.</p>
-      </div>
-    </div> -->
-
-    <button class="btn btn-proyects">Ver más</button>
   </div>
 </section>
     <!-- Educacion -->
-   <section id="education">
+   <section id="education" class="education">
   <h2>Educación</h2>
   <div class="education">
 
@@ -172,39 +189,33 @@
 <!-- Contactame -->
 <section id="contact-me">
   <div class="contact-me">
-
-    <!-- Bloque superior: texto + icono -->
     <div class="contact-header">
+      <!-- Texto -->
       <div class="contact-text">
         <h2>Contáctame</h2>
-        <p>¿Deseas discutir un proyecto o simplemente decir hola?  
-           Mi bandeja de entrada está abierta para todos.</p>
-        <p class="email">douglasreyes@gmail.com</p>
+        <p>Si deseas trabajar conmigo o tienes un proyecto en mente, escríbeme:</p>
+        <p class="email">duglasreyes2005@gmail.com</p>
+
+        <!-- Redes debajo del correo -->
+        <div class="buttons-contact">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
       </div>
-      <i class="fa-solid fa-phone-flip phone-icon"></i>
-    </div>
 
-    <!-- Bloque inferior: redes sociales -->
-    <div class="buttons-contact socials-buttons">
-      <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-linkedin"></i>
-      </a>
-      <a href="https://www.instagram.com/tuusuario" target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
-      <a href="mailto:douglasreyes@gmail.com" target="_blank" rel="noopener noreferrer">
-        <i class="fa-solid fa-envelope"></i>
-      </a>
-      <a href="https://github.com/tuusuario" target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-github"></i>
-      </a>
+      <!-- Icono teléfono -->
+      <div class="phone-icon">
+        <i class="fas fa-phone"></i>
+      </div>
     </div>
-
   </div>
 </section>
 
     <!-- Boton de scroll para volver al inicio. Falta hacer el apartado de js para su funcionalidad -->
-    <button class="btn-scrolltop" id="btn_scrolltop"><i class="fas fa-chevron-up"></i></button>
+    <button class="btn-scrolltop" id="btn_scrolltop"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="m8 4.293l3.854 3.853l-.707.708L8 5.707L4.854 8.854l-.708-.708zm0 3l3.854 3.853l-.707.708L8 8.707l-3.146 3.147l-.708-.707z" clip-rule="evenodd"/></svg></button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
 </main>
 </body>
 </html>
