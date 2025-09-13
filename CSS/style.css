@@ -68,6 +68,15 @@ header{
     font-weight: 600;
     transition: all 0.3s;
 }
+.close-menu {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-top: 2rem;
+}
 @media (max-width: 768px) {
   .header {
     height: 60px;
@@ -84,36 +93,53 @@ header{
     cursor: pointer;
   }
 
-  .nav-links {
-    position: absolute;
-    top: 60px;
+  .header .nav-links {
+    position: fixed;
+    top: 0;
     left: 0;
-    width: 100%;
-    background-color: #0f172a;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem 0;
-    display: none;
-    z-index: 999;
-    flex-wrap: wrap;
-  }
-
-  .nav-links.active {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(15, 23, 42, 0.98); /* fondo opaco */
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center; /* centra verticalmente los enlaces */
+    padding: 0;
+    clip-path: circle(0px at 90% -10%);
+    pointer-events: none;
+    z-index: 9999; /* asegura que esté por encima de todo */
+  }
+  .menu-btn {
+  position: relative;   /* o fixed si quieres que quede en la esquina */
+  z-index: 10000;       /* mayor que .nav-links */
+}
+  .nav-links.active {
+    clip-path: circle(150% at 50% 50%);
+    pointer-events: all;
   }
 
   .nav-links li {
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.3s ease;
-    display: block;
+    font-size: 2rem;
     padding: 1em 0;
   }
   .nav-links.active li {
     opacity: 1;
     transform: translateY(0);
+  }
+  .nav-links li:nth-child(1) {
+    transition-delay: 0.1s;
+  }
+  .nav-links li:nth-child(2) {
+    transition-delay: 0.2s;
+  }
+  .nav-links li:nth-child(3) {
+    transition-delay: 0.3s;
+  }
+  .nav-links li:nth-child(4) {
+    transition-delay: 0.4s;
   }
 }
 /* Presentación */

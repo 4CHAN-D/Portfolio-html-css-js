@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="icon" href="CSS/img/logo-douglas.png" type="image/x-icon">
-    <script src="script.js"></script>
+
 
     <title>Douglas Reyes Portfolio</title>
 </head>
@@ -24,7 +24,7 @@
         <button class="menu-btn" id="menu-btn" >
             <i class="fa-solid fa-bars"></i>
         </button>
-        <nav id="navbar" aria-label="Menú principal">
+        <nav id="navbar" class="navbar">
             <ul class="nav-links">
                 <li><a href="#about-me">Acerca de mí</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -33,6 +33,29 @@
                 <li><a href="#contact-me">Contáctame</a></li>
             </ul>
         </nav>
+        <script >
+const menuBtn = document.getElementById('menu-btn');
+const navLinks = document.querySelector('.nav-links');
+const links = navLinks.querySelectorAll('a');
+
+menuBtn.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+  if (navLinks.classList.contains('active')) {
+    menuBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>'; // X
+    menuBtn.setAttribute('aria-expanded', 'true');
+  } else {
+    menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>'; // ☰
+    menuBtn.setAttribute('aria-expanded', 'false');
+  }
+});
+
+links.forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+    menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    menuBtn.setAttribute('aria-expanded', 'false');
+  });
+});</script>
     </header>
         <!--Presentacion -->
         <div id="showcase" class="presentation">
@@ -217,7 +240,7 @@
 </section>
 
     <!-- Boton de scroll para volver al inicio. Falta hacer el apartado de js para su funcionalidad -->
-    <button class="btn-scrolltop" id="btn_scrolltop" href="#header"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="m8 4.293l3.854 3.853l-.707.708L8 5.707L4.854 8.854l-.708-.708zm0 3l3.854 3.853l-.707.708L8 8.707l-3.146 3.147l-.708-.707z" clip-rule="evenodd"/></svg></button>
+    <button class="btn-scrolltop" id="btn_scrolltop" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="m8 4.293l3.854 3.853l-.707.708L8 5.707L4.854 8.854l-.708-.708zm0 3l3.854 3.853l-.707.708L8 8.707l-3.146 3.147l-.708-.707z" clip-rule="evenodd"/></svg></button>
 
     <script>
       const btnScrollTop = document.getElementById('btn_scrolltop');
