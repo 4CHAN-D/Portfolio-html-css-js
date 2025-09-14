@@ -8,12 +8,12 @@
     <meta name="keywords" content="Douglas Reyes, Portfolio, Web Developer, Designer">
     <meta name="author" content="Douglas Reyes">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/responsive.css">
-    <link rel="icon" href="CSS/img/logo-douglas.png" type="image/x-icon">
-
-
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+      <link rel="stylesheet" href="CSS/style.css">
+      <link rel="stylesheet" href="CSS/responsive.css">
+      <link rel="icon" href="CSS/img/logo-douglas.png" type="image/x-icon">
+      
+  
     <title>Douglas Reyes Portfolio</title>
 </head>
 <body>
@@ -34,29 +34,8 @@
                 <li><a href="#contact-me">Contáctame</a></li>
             </ul>
         </nav>
-        <script >
-const menuBtn = document.getElementById('menu-btn');
-const navLinks = document.querySelector('.nav-links');
-const links = navLinks.querySelectorAll('a');
-
-menuBtn.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
-  if (navLinks.classList.contains('active')) {
-    menuBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>'; // X
-    menuBtn.setAttribute('aria-expanded', 'true');
-  } else {
-    menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>'; // ☰
-    menuBtn.setAttribute('aria-expanded', 'false');
-  }
-});
-
-links.forEach(link => {
-  link.addEventListener('click', () => {
-    navLinks.classList.remove('active');
-    menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
-    menuBtn.setAttribute('aria-expanded', 'false');
-  });
-});</script>
+        <script src="burgermenu.js"></script>
+      <!-- Fin de la barra de navegacion -->
     </header>
         <!--Presentacion -->
         <div id="showcase" class="presentation">
@@ -188,7 +167,7 @@ links.forEach(link => {
     <div class="education-item">
       <img src="CSS/img/Logo_de_la_UPTC.svg.png" alt="logo uptc">
       <div class="education-info">
-        <h3>Universidad del Magdalena</h3>
+        <h3>Universidad Pedagogica y Tecnologica de Colombia</h3>
         <h4>Biología</h4>
         <h5>2023 - Presente</h5>
         <p>Estudiante de Biología y bootcamp de desarrollo web</p>
